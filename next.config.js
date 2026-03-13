@@ -1,7 +1,7 @@
 module.exports = {
   output: "export",
   images: {
-    // unoptimized: true,
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
