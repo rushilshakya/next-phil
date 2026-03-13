@@ -1,0 +1,13 @@
+.summary {
+	padding: get-size("500") get-size("500") get-size("600") get-size("500");
+	max-width: 50ch;
+
+	dl,
+	dt {
+		--flow-space: #{get-size("700")};
+	}
+
+	dd {
+		--flow-space: #{get-size("300")};
+	}
+}

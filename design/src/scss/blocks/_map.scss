@@ -1,0 +1,37 @@
+#map {
+	height: 30vh;
+	overflow: hidden;
+	border-radius: 5px;
+	@include media-query("md") {
+		height: 60vh;
+	}
+}
+.marker {
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	display: none;
+}
+//.mapboxgl-popup {
+//	max-width: 200px;
+//}
+
+.mapboxgl-popup-content {
+	text-align: center;
+	padding: 1.3em;
+	border: 1px solid get-color("primary");
+	border-radius: 10px;
+	a {
+		text-decoration: none;
+		padding: 0.1em 0.3em;
+		border-radius: 3px;
+		&:hover {
+			background: get-color("primary");
+			color: get-color("light");
+		}
+	}
+}
+.show-map {
+	display: inline-block;
+}

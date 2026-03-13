@@ -1,0 +1,75 @@
+.link-pointer-bare {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  &:hover {
+    background: get-color("powder");
+    color: get-color("primary");
+  }
+}
+.link-pointer-basic {
+  @extend .link-pointer-bare;
+  display: inline-block;
+}
+.link-pointer-no-display {
+  @extend .link-pointer-bare;
+  background: get-color("secondary");
+  color: get-color("black");
+
+  &[data-variant="invert"] {
+    background: get-color("powder");
+    color: get-color("primary");
+    &:hover {
+      background: get-color("secondary");
+      color: get-color("black");
+    }
+  }
+  &[data-variant="disabled"] {
+    cursor: default;
+    &:hover {
+      background: get-color("primary");
+      color: get-color("light");
+    }
+  }
+}
+.link-pointer {
+  @extend .link-pointer-no-display;
+  display: inline-block;
+}
+.sub-header {
+  font-style: italic;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.inline-display {
+  display: inline;
+  font-style: italic;
+  &[data-variant="link"] {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+.b-legal {
+  font-style: italic;
+  padding-left: 9.36px;
+}
+.link-pointer-gold {
+  color: var(--Gold);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  &:hover {
+    background: get-color("powder");
+    color: get-color("primary");
+    text-decoration: none;
+  }
+}
+.link-no-decoration {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: get-color("black");
+  }
+}

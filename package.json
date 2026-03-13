@@ -1,0 +1,26 @@
+{
+  "name": "mh-hub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
+    "build-n": "next build",
+    "export": "tinacms build && next build",
+    "preview": "next build && next start",
+    "start": "tinacms build && next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tinacms": "^1.6.4",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.46",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "13.0.0"
+  }
+}
