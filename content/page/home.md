@@ -1,6 +1,6 @@
 ---
 title: home
-heading: Asian Mental Health Hub
+heading: Asian Mental Health Hub for PHIL
 subHeading: Mental health for Asian Americans—tools in eight Asian languages
 image: /img/MHHubCover.png
 resources:
@@ -14,9 +14,7 @@ resources:
     buttonLabel: See resources
   - icon: /img/icon/research-paper.svg
     category: researchAndPolicy
-    description: >-
-      Gain insights into the state of Asian mental health in New York through
-      our research articles.
+    description: Gain insights into the state of Asian mental health in New York through our research articles.
     buttonLabel: See resources
 ---
 
